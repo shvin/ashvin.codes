@@ -4,7 +4,7 @@ const Page = () => {
     return (
         <Container>
             <Box borderRadius="lg" bg="cyan" p={3} mb={6} align="center">
-                Ashvin Ramanathan: Student Developer based in USA/Canada.
+                hello ~ welcome to ashvin.codes!
             </Box>
 
             <Box display={{md: 'flex'}}>
