@@ -53,7 +53,7 @@ const Page = () => {
             </Box>
 
             <Section delay={0.1}>
-                <Heading as="h3" variant="section-title">
+                <Heading as="h3" variant="section-title" fontSize={26}>
                     about
                 </Heading>
                 <Para>
@@ -77,7 +77,7 @@ const Page = () => {
             </Section>
 
             <Section delay={0.2}>
-                <Heading as="h3" variant="section-title">
+                <Heading as="h3" variant="section-title" fontSize={26}>
                     experience
                 </Heading>
                 <NoteSectionYear>
@@ -91,7 +91,7 @@ const Page = () => {
             </Section>
 
             <Section delay={0.2}>
-                <Heading as="h3" variant="section-title">
+                <Heading as="h3" variant="section-title" fontSize={26}>
                     fun facts
                 </Heading>
                 <Para>

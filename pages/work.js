@@ -2,10 +2,15 @@ import {
     Container,
     Heading,
     SimpleGrid,
-    Divider
+    Divider,
+    Box,
+    useColorModeValue
 } from '@chakra-ui/react'
+import Para from '../components/para'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
+import { NoteSectionYear , NoteSectionYearYR } from '../components/yearsection'
+
 import thumbashvincodes from '../public/images/works/ashvincodes_thumb.png'
 import thumbvinbot from '../public/images/works/vinbot_thumb.png'
 import thumbwikiscraper from '../public/images/works/wikiscraper_thumb.jpg'
@@ -46,6 +51,27 @@ const Work = () => {
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
+
+            <Section delay={0.2}>
+            <Box
+            borderRadius="lg"
+            bg={useColorModeValue('#40b7f7', '#946bfa')}
+            p={3}
+            mb={6}
+            align="center"
+            >
+                potential projects
+            </Box>
+                <NoteSectionYear>
+                    <NoteSectionYearYR>-</NoteSectionYearYR>
+                    discord bot built with discord.js that tracks my crypto portfolio. 
+                </NoteSectionYear>
+                <NoteSectionYear>
+                    <NoteSectionYearYR>-</NoteSectionYearYR>
+                    reworked version of the spotify shuffle feature where you are likely to hear songs you don't hear as often
+                </NoteSectionYear>
+            </Section>
+
         </Container>
     )
 }
