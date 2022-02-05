@@ -15,7 +15,7 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button.js'
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, children, path }) => {
     const active = path === href
@@ -65,6 +65,7 @@ const Navbar = props => {
                 alignItems="center"
                 flexGrow={1}
                 mt={{ base: 4, nmd: 0 }}
+                textColor={useColorModeValue('#ffffff', '#000000')}
                 >
                     <LinkItem href="/work" path={path}>
                         Work

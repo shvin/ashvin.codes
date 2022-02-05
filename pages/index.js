@@ -1,9 +1,9 @@
-import { Container, Box, Heading } from '@chakra-ui/react'
+import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
 
 const Page = () => {
     return (
         <Container>
-            <Box borderRadius="lg" bg="#946bfa" p={3} mb={6} align="center">
+            <Box borderRadius="lg" bg={useColorModeValue('#946bfa', '#946bfa')} p={3} mb={6} align="center">
                 hello ~ welcome to ashvin.codes!
             </Box>
 
@@ -13,7 +13,24 @@ const Page = () => {
                         Ashvin Ramanathan
                     </Heading>
                 </Box>
-            <p>Internet Enthusiast ( Student / Developer )</p>
+            <p>Internet Enthusiast <br /> [Student / Developer]</p>
+            </Box>
+            <Box
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            align="center"
+            >
+                <Image
+                borderColor="whiteAlpha.800"
+                borderWidth={2}
+                borderStyle="solid"
+                maxWidth="100px"
+                display="inline-block"
+                borderRadius="full"
+                src="/images/ashvin.jpg"
+                alt="Profile Picture"
+                />
             </Box>
         </Container>
     )
