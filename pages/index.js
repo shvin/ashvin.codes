@@ -18,7 +18,7 @@ const Page = () => {
         <Container>
             <Box
             borderRadius="lg"
-            bg={useColorModeValue('#946bfa', '#946bfa')}
+            bg={useColorModeValue('#40b7f7', '#946bfa')}
             p={3}
             mb={6}
             align="center"
