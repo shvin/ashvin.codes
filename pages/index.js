@@ -23,7 +23,7 @@ const Page = () => {
             mb={6}
             align="center"
             >
-                hello ~ welcome to ashvin.codes!
+                welcome to ashvin.codes! - text spacing messed up lol?
             </Box>
 
             <Box display={{ md: 'flex' }}>
@@ -57,9 +57,8 @@ const Page = () => {
                     about
                 </Heading>
                 <Para>
-                    Ashvin is a student at the University of Ottawa studying Computer Science. 
-                    Looking for internship opportunities in the USA(Atlanta) and Canada(Ottawa).
-                    You can find my recent work, posts, and other things ashvin on this site.
+                    Student at the University of Ottawa studying Computer Science, looking for internship
+                    opportunities in USA(Atlanta) or Canada(Ottawa).
                     My most recent project is this website {' '}
                     <NextLink href="/works/ashvincodes">
                         <Link>
@@ -90,6 +89,23 @@ const Page = () => {
                     7Factor | Programming Intern ~ Worked with a senior engineer on a covid-19 screening tool built on vue.js. Based in Atlanta but was remote.
                 </NoteSectionYear>
             </Section>
+
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                    fun facts
+                </Heading>
+                <Para>
+                Some of my other interests include crypto, working out, and gaming. You can find my collection of pixels
+                @ {' '}
+                <NextLink href="https://ashvin.tez.page/">
+                    <Link>
+                        ashvin.tez
+                    </Link>
+                </NextLink>
+                .
+                </Para>
+            </Section>
+
         </Container>
     )
 }
