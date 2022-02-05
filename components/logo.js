@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Text, userColorModeValue } from '@chakra-ui/react'
+import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
@@ -13,25 +13,25 @@ const LogoBox = styled.span`
     padding: 10px;
 
     &:hover img {
-        transform: rotate(20deg);
+        filter: brightness(0.8);
     }
 `
 
 const Logo = () => {
-    const footPprintImg = `/images/footprints${userColorModeValue('', '-dark')}.png`
+    const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
 
     return (
         <Link href="/">
             <a>
                 <LogoBox>
-                    <Image src={footPprintImg} alt="logo" height={20} width={30} />
+                    <Image src={footPrintImg} alt="logo" height={20} width={20} />
                     <Text 
-                        color={userColorModeValue('gray.800', 'whiteAlpha.900')}
+                        color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily='M PLUS Rounded 1c'
                         fontWeight="bold"
                         ml={3}
                     >
-                        Ashvin Ramanathan
+                        ashvin.codes
                     </Text>
                 </LogoBox>
             </a>
