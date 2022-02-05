@@ -47,12 +47,13 @@ const Work = () => {
                     title="terraria wiki scraper"
                     thumbnail={thumbwikiscraper}
                     >
-                        a small web scraper bot that reads and returns item drop percentages from the game terraria. bot scrapes the terraria official wiki for these drop rates found on the item's page.
+                        a small web scraper bot that reads and returns item drop percentages from the game terraria. bot scrapes the terraria official wiki for these drop rates found on the item&apos;s page.
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
-            <Divider my={10} />
+
             <Section delay={0.2}>
+            <Divider my={10} />
             <Box
             borderRadius="lg"
             bg={useColorModeValue('#40b7f7', '#946bfa')}
@@ -64,11 +65,11 @@ const Work = () => {
             </Box>
                 <NoteSectionYear>
                     <NoteSectionYearYR>-</NoteSectionYearYR>
-                    discord bot built with discord.js that tracks my crypto portfolio. 
+                    discord bot built with discord.js that tracks my crypto portfolio
                 </NoteSectionYear>
                 <NoteSectionYear>
                     <NoteSectionYearYR>-</NoteSectionYearYR>
-                    reworked version of the spotify shuffle feature where you are likely to hear songs you don't hear as often
+                    smartshuffle - a feature that shuffles your playlist in a way to play you songs you don&apos;t hear as often
                 </NoteSectionYear>
             </Section>
 
@@ -83,10 +84,10 @@ const Work = () => {
                 <Section delay={0.3}>
                     <WorkGridItem
                     id="gtsys"
-                    title="gt sys"
+                    title="global transport systems"
                     thumbnail={thumbgtsys}
                     >
-                        a web application that was worked on during my time at the University of Ottawa. class code SEG 2900.
+                        a mock web application that was worked on as a part of a class project in SEG 2900.
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>

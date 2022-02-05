@@ -84,11 +84,11 @@ const Page = () => {
                 </Heading>
                 <NoteSectionYear>
                     <NoteSectionYearYR>2020-25</NoteSectionYearYR>
-                    University of Ottawa | Enrolled in undergraduate honours program in Computer Science with co-op.
+                    University of Ottawa | Enrolled in undergraduate honours program in Computer Science with co-op. CS and Crypto Club.
                 </NoteSectionYear>
                 <NoteSectionYear>
                     <NoteSectionYearYR>2020-21</NoteSectionYearYR>
-                    7Factor | Programming Intern ~ Worked with a senior engineer on a covid-19 screening tool built on vue.js. Based in Atlanta but was remote.
+                    7Factor | Programming Intern ~ Worked with a senior engineer on a covid-19 screening tool built on vue.js. Based in Atlanta and was remote.
                 </NoteSectionYear>
             </Section>
 
