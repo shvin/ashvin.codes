@@ -5,7 +5,8 @@ import {
     Heading,
     Image,
     Link,
-    useColorModeValue
+    useColorModeValue,
+    Divider
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
@@ -77,6 +78,7 @@ const Page = () => {
             </Section>
 
             <Section delay={0.2}>
+                <Divider my={5} />
                 <Heading as="h3" variant="section-title" fontSize={26}>
                     experience
                 </Heading>
@@ -91,6 +93,7 @@ const Page = () => {
             </Section>
 
             <Section delay={0.2}>
+                <Divider my={5} />
                 <Heading as="h3" variant="section-title" fontSize={26}>
                     fun facts
                 </Heading>

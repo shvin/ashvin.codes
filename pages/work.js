@@ -2,11 +2,10 @@ import {
     Container,
     Heading,
     SimpleGrid,
-    Divider,
     Box,
-    useColorModeValue
+    useColorModeValue,
+    Divider
 } from '@chakra-ui/react'
-import Para from '../components/para'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import { NoteSectionYear , NoteSectionYearYR } from '../components/yearsection'
@@ -14,12 +13,13 @@ import { NoteSectionYear , NoteSectionYearYR } from '../components/yearsection'
 import thumbashvincodes from '../public/images/works/ashvincodes_thumb.png'
 import thumbvinbot from '../public/images/works/vinbot_thumb.png'
 import thumbwikiscraper from '../public/images/works/wikiscraper_thumb.jpg'
+import thumbgtsys from '../public/images/works/gtsys_thumb.png'
 
 const Work = () => {
     return (
         <Container>
             <Heading as="h3" fontSize={20} mb={4}>
-                My Work
+                Projects
             </Heading>
 
             <SimpleGrid columns={[1,1,2]} gap={6}>
@@ -51,7 +51,7 @@ const Work = () => {
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
-
+            <Divider my={10} />
             <Section delay={0.2}>
             <Box
             borderRadius="lg"
@@ -72,6 +72,24 @@ const Work = () => {
                 </NoteSectionYear>
             </Section>
 
+            <Section delay={0.2}>
+                <Divider my={10} />
+                <Heading as="h3" fontSize={20} mb={4}>
+                    Classes
+                </Heading>
+            </Section>
+
+            <SimpleGrid columns={[1,1,2]} gap={6}>
+                <Section delay={0.3}>
+                    <WorkGridItem
+                    id="gtsys"
+                    title="gt sys"
+                    thumbnail={thumbgtsys}
+                    >
+                        a web application that was worked on during my time at the University of Ottawa. class code SEG 2900.
+                    </WorkGridItem>
+                </Section>
+            </SimpleGrid>
         </Container>
     )
 }
