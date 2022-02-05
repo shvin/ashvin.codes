@@ -1,14 +1,17 @@
 import {
     Container,
+    Button,
     Box,
     Heading,
     Image,
     Link,
     useColorModeValue
 } from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import Section from '../components/section'
 import Para from '../components/para'
+import { NoteSectionYear , NoteSectionYearYR } from '../components/yearsection'
 
 const Page = () => {
     return (
@@ -65,6 +68,27 @@ const Page = () => {
                     </NextLink>
                     ; built with Next.js, Chakra UI, Framer Motion, and Three.js. 
                 </Para>
+                <Box align="center" my={4}>
+                    <NextLink href="/work">
+                        <Button rightIcon={<ChevronRightIcon />} colorSceheme="teal">
+                        my projects
+                        </Button>
+                    </NextLink>
+                </Box>
+            </Section>
+
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                    experience
+                </Heading>
+                <NoteSectionYear>
+                    <NoteSectionYearYR>2020-25</NoteSectionYearYR>
+                    University of Ottawa | Enrolled in undergraduate honours program in Computer Science with co-op.
+                </NoteSectionYear>
+                <NoteSectionYear>
+                    <NoteSectionYearYR>2020-21</NoteSectionYearYR>
+                    7Factor | Programming Intern ~ Worked with a senior engineer on a covid-19 screening tool built on vue.js. Based in Atlanta but was remote.
+                </NoteSectionYear>
             </Section>
         </Container>
     )
