@@ -14,6 +14,8 @@ import thumbashvincodes from '../public/images/works/ashvincodes_thumb.png'
 import thumbvinbot from '../public/images/works/vinbot_thumb.png'
 import thumbwikiscraper from '../public/images/works/wikiscraper_thumb.jpg'
 import thumbgtsys from '../public/images/works/gtsys_thumb.png'
+import thumbnftminter from '../public/images/works/nftminter_thumb.png'
+import Para from '../components/para'
 
 const Work = () => {
     return (
@@ -30,6 +32,15 @@ const Work = () => {
                     thumbnail={thumbashvincodes}
                     >
                         This website! Built with Next.js, ChakraUI, Framer Motion, and Three.js. This website is the second implementation of my portfolio after first trying a static site.
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem
+                    id="nftminter"
+                    title="mint a nft"
+                    thumbnail={thumbnftminter}
+                    >
+                        Web3.0 NFT minting webapp created for the Rinkeby testnet on eth. Built with react+solidity, it features its own smart contract.
                     </WorkGridItem>
                 </Section>
                 <Section>
@@ -63,14 +74,15 @@ const Work = () => {
             >
                 potential projects
             </Box>
-                <NoteSectionYear>
-                    <NoteSectionYearYR>-</NoteSectionYearYR>
-                    discord bot built with discord.js that tracks my crypto portfolio
-                </NoteSectionYear>
-                <NoteSectionYear>
-                    <NoteSectionYearYR>-</NoteSectionYearYR>
-                    smartshuffle - a feature that shuffles your playlist in a way to play you songs you don&apos;t hear as often
-                </NoteSectionYear>
+                <p>
+                    ~ discord bot built with discord.js that tracks my crypto portfolio
+                </p>
+                <p>
+                    ~ smartshuffle: a feature that shuffles your playlist in a way to play you songs you don&apos;t hear as often
+                </p>
+                <p>
+                    ~ web program that takes your daily wordle copy/pastes and provides you with detailed statistics about your performances
+                </p>
             </Section>
 
             <Section delay={0.2}>

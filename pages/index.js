@@ -26,7 +26,7 @@ const Page = () => {
                 mb={6}
                 align="center"
                 >
-                    welcome to ashvin.codes! - text spacing messed up lol?
+                    ~ welcome to ashvin.codes! ~
                 </Box>
 
                 <Box display={{ md: 'flex' }}>
@@ -61,9 +61,9 @@ const Page = () => {
                     </Heading>
                     <Para>
                         Student at the University of Ottawa studying Computer Science, looking for internship
-                        opportunities in USA(Atlanta) or Canada(Ottawa).
+                        opportunities in USA (Atlanta) or Canada (Ottawa).
                         My most recent project is this website {' '}
-                        <NextLink href="/works/ashvincodes">
+                        <NextLink href="/work/ashvincodes">
                             <Link>
                                 ashvin.codes 
                             </Link>
@@ -100,17 +100,16 @@ const Page = () => {
                         fun facts
                     </Heading>
                     <Para>
-                    Some of my other interests include crypto, working out, and gaming. You can find my collection of pixels
-                    @ {' '}
-                    <NextLink href="https://ashvin.tez.page/">
-                        <Link>
-                            ashvin.tez
-                        </Link>
-                    </NextLink>
-                    .
+                        Some of my other interests include crypto, working out, and gaming. You can find my collection of pixels
+                        @ {' '}
+                        <a href="https://ashvin.tez.page/">
+                            <Link>
+                                ashvin.tez
+                            </Link>
+                        </a>
+                        . My interests within the tech industry include web3.0, graphics, and machine learning.
                     </Para>
                 </Section>
-
             </Container>
         </Layout>
     )
