@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eff1674f-bb55-482e-806a-d0a5d65525cc/deploy-status)](https://app.netlify.com/sites/ashvincodes/deploys)
 
 ### **What is this?:**
-This is the 2nd version of my portfolio website, this time created with a stack to help with future expansion and usability. The tools used are ReactJS, ChakraUI, ThreeJS, and Framer Motion.
+This is the 2nd version of my portfolio website, this time created with a stack to help with future expansion and usability. The tools used are NextJS, ChakraUI, ThreeJS, and Framer Motion.
 ### **Site Setup (Local):**
 To get started with this site, please use the following commands:
 
@@ -17,11 +17,7 @@ To get started with this site, please use the following commands:
 - [ ] Create a gist for the project detail's page template
 
 ### **Stack:**
-- react.js - [reactjs.org](https://reactjs.org/)
-used to easily create a dynamic front end that can be expanded easily in the future
-- chakra ui - [chakra-ui.com](https://chakra-ui.com/)
-used to help with css styling and theme modification
-- framer motion - [framer.com](https://framer.com/)
-used for all the animations and transitions in the site
-- three.js - [threejs.org](https://threejs.org/)
-used to create and implement the 3d model // +funcationality
+- next.js - [nextjs.org](https://nextjs.org/) | used to easily create a dynamic front end that can be expanded easily in the future (built on react)
+- chakra ui - [chakra-ui.com](https://chakra-ui.com/) | used to help with css styling and theme modification
+- framer motion - [framer.com](https://framer.com/) | used for all the animations and transitions in the site
+- three.js - [threejs.org](https://threejs.org/) | used to create and implement the 3d model // +funcationality
