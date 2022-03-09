@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
     return (
-        <Layout title="ashvincodes">
+        <Layout title="portfolio">
             <Container>
                 <Title>
                     ashvin.codes <Badge>2022</Badge>
@@ -34,6 +34,12 @@ const Work = () => {
                         <Meta>Post</Meta>
                         <Link href="">
                             See the post about this site! <ExternalLinkIcon mx="2px" />
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Meta>Github</Meta>
+                        <Link href="https://github.com/shvin/ashvin.codes">
+                        View Repository <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                 </List>

@@ -4,18 +4,17 @@ import {
     SimpleGrid,
     Box,
     useColorModeValue,
-    Divider
+    Divider,
+    Link
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import { NoteSectionYear , NoteSectionYearYR } from '../components/yearsection'
-
 import thumbashvincodes from '../public/images/works/ashvincodes_thumb.png'
 import thumbvinbot from '../public/images/works/vinbot_thumb.png'
 import thumbwikiscraper from '../public/images/works/wikiscraper_thumb.jpg'
 import thumbgtsys from '../public/images/works/gtsys_thumb.png'
-import thumbnftminter from '../public/images/works/nftminter_thumb.png'
-import Para from '../components/para'
+import thumbnftminter from '../public/images/works/nftminter_thumb.jpg'
+import thumbsmartcontract from '../public/images/works/smartcontract_thumb.png'
 
 const Work = () => {
     return (
@@ -37,10 +36,10 @@ const Work = () => {
                 <Section>
                     <WorkGridItem
                     id="nftminter"
-                    title="mint a nft"
+                    title="ethereum NFT minter"
                     thumbnail={thumbnftminter}
                     >
-                        Web3.0 NFT minting webapp created for the Rinkeby testnet on eth. Built with react+solidity, it features its own smart contract.
+                        NFT Minting dAPP built with React and Ethers.js, ERC-721 Smart Contract made with Solidity and Hardhat.
                     </WorkGridItem>
                 </Section>
                 <Section>
@@ -61,6 +60,14 @@ const Work = () => {
                         a small web scraper bot that reads and returns item drop percentages from the game terraria. bot scrapes the terraria official wiki for these drop rates found on the item&apos;s page.
                     </WorkGridItem>
                 </Section>
+                <Section>
+                    <WorkGridItem
+                    id="smartcontract"
+                    title="erc721a optmization"
+                    thumbnail={thumbsmartcontract}>
+                        in-depth research about erc721 smart contracts and use cases in the ethereum blockchain. merkle tree whitelists, presales, gas optimizations, and more.
+                    </WorkGridItem>
+                </Section>
             </SimpleGrid>
 
             <Section delay={0.2}>
@@ -75,10 +82,15 @@ const Work = () => {
                 potential projects
             </Box>
                 <p>
-                    ~ discord bot built with discord.js that tracks my crypto portfolio
+                    ~ smartshuffle: [in development!] a feature that shuffles your playlist in a way to play you songs you don&apos;t hear as often. currently being developed for the {' '}
+                        <a href="https://spicetify.app/">
+                            <Link>
+                                Spicetify
+                            </Link>
+                        </a> spotify tool.
                 </p>
                 <p>
-                    ~ smartshuffle: a feature that shuffles your playlist in a way to play you songs you don&apos;t hear as often
+                    ~ discord bot built with discord.js that tracks my crypto portfolio
                 </p>
                 <p>
                     ~ web program that takes your daily wordle copy/pastes and provides you with detailed statistics about your performances
