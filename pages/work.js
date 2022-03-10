@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
+
 import thumbashvincodes from '../public/images/works/ashvincodes_thumb.png'
 import thumbvinbot from '../public/images/works/vinbot_thumb.png'
 import thumbwikiscraper from '../public/images/works/wikiscraper_thumb.jpg'

@@ -15,11 +15,6 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/404": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/404.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,25 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/work": [
+    "/posts": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/work.js"
+      "static/chunks/pages/posts.js"
     ],
-    "/work/nftminter": [
+    "/posts/wsl": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/work/nftminter.js"
-    ],
-    "/work/smartcontract": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/work/smartcontract.js"
-    ],
-    "/work/vinbot": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/work/vinbot.js"
+      "static/chunks/pages/posts/wsl.js"
     ]
   },
   "ampFirstPages": []
