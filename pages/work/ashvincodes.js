@@ -47,7 +47,7 @@ const Work = () => {
 
                 <WorkImage src="/images/works/ashvincodes_1.png" alt="ashvincodes" />
                 <P>
-                    This is the first version of the site. Although being a static site, it featured a global navbar and footer.
+                    This is the first version of the site. Although being a static site, it featured a global navbar and footer as well as a dynamically shaping projects grid.
                 </P>
                 <Divider my={4} />
                 <WorkImage src="/images/works/ashvincodes_2.png" alt="ashvincodes" />
