@@ -19,13 +19,19 @@ import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, children, path }) => {
     const active = path === href
-    const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
+    const inactiveColor = useColorModeValue('black', 'white')
+    const hoverColor = useColorModeValue('#52a6eb', '#946bfa')
+    const activeColor = useColorModeValue('black', 'white')
+
     return (
         <NextLink href={href}>
             <Link
+            px={2}
+            py={1}
+            rounded={"lg"}
             p={2}
-            bg={active ? 'glassTeal' : undefined}
-            color={active ? '#202023' : inactiveColor}
+            bg={active ? hoverColor : undefined}
+            color={active ? activeColor : inactiveColor}
             >
                 {children}
             </Link>
@@ -40,7 +46,7 @@ const Navbar = props => {
         position="fixed"
         as="nav"
         w="100%"
-        bg={useColorModeValue('#f0e7db', '20202380')}
+        bg={useColorModeValue('#f0e7db', '#202023')}
         style={{backdropFilter: 'blur(10px)'}}
         zIndex={1}
         {...props}
@@ -53,7 +59,7 @@ const Navbar = props => {
             justify="space-between"
             >
                 <Flex align="center" mr={5}>
-                    <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+                    <Heading as="h1" size="lg" letterSpacing={'tight'}>
                         <Logo />
                     </Heading>
                 </Flex>
@@ -65,7 +71,6 @@ const Navbar = props => {
                 alignItems="center"
                 flexGrow={1}
                 mt={{ base: 4, nmd: 0 }}
-                textColor={useColorModeValue('#ffffff', '#000000')}
                 >
                     <LinkItem href="/work" path={path}>
                         Work
@@ -73,26 +78,34 @@ const Navbar = props => {
                     <LinkItem href="/posts" path={path}>
                         Posts
                     </LinkItem>
+                    <LinkItem href="/contact" path={path}>
+                        Contact
+                    </LinkItem>
                 </Stack>
 
                 <Box flex={1} align="right">
                     <ThemeToggleButton />
-                    <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
+                    <Box ml={1} display={{base: 'inline-block', md: 'none'}}>
                       <Menu>
                         <MenuButton as={IconButton}
                         icon={<HamburgerIcon />}
                         variant="outline"
                         aria-label="Options"
                         />
-                        <MenuList>
+                        <MenuList
+                        bg={useColorModeValue('#f0e7db', '#202023')}
+                        >
                             <NextLink href="/" passHref>
-                                <MenuItem as={Link}>About</MenuItem>
+                                <MenuItem as={Link}>Home</MenuItem>
                             </NextLink>
                             <NextLink href="/work" passHref>
                                 <MenuItem as={Link}>Work</MenuItem>
                             </NextLink>
                             <NextLink href="/posts" passHref>
                                 <MenuItem as={Link}>Posts</MenuItem>
+                            </NextLink>
+                            <NextLink href="/contact" passHref>
+                                <MenuItem as={Link}>Contact</MenuItem>
                             </NextLink>
                         </MenuList>
                       </Menu>

@@ -6,7 +6,8 @@ import {
     Image,
     Link,
     useColorModeValue,
-    Divider
+    Divider,
+    HStack
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
@@ -43,25 +44,25 @@ const Page = () => {
                     align="center"
                     >
                         <Image
-                        borderColor="whiteAlpha.800"
+                        borderColor={useColorModeValue('black','white')}
                         borderWidth={2}
                         borderStyle="solid"
                         maxWidth="100px"
                         display="inline-block"
                         borderRadius="full"
-                        src="/images/ashvin.jpg"
+                        src="/images/ashvin.gif"
                         alt="Profile Picture"
                         />
                     </Box>
                 </Box>
 
                 <Section delay={0.1}>
-                    <Heading as="h3" variant="section-title" fontSize={26}>
+                    <Heading as="h3" variant="section-title" fontSize={26} mb={1}>
                         about
                     </Heading>
                     <Para>
-                        Student at the University of Ottawa studying Computer Science, looking for internship
-                        opportunities in USA (Atlanta) or Canada (Ottawa).
+                        Student at the University of Ottawa studying Computer Science, looking for internship or work
+                        opportunities in Atlanta/USA or Ottawa/CA.
                         My most recent project is this website {' '}
                         <NextLink href="/work/ashvincodes">
                             <Link>
@@ -70,18 +71,52 @@ const Page = () => {
                         </NextLink>
                         ; built with Next.js, Chakra UI, Framer Motion, and Three.js. 
                     </Para>
-                    <Box align="center" my={4}>
+                    <HStack my={2} spacing={8} justifyContent={"center"}>
                         <NextLink href="/work">
-                            <Button rightIcon={<ChevronRightIcon />} colorSceheme="teal">
-                            my projects
+                            <Button
+                            rightIcon={<ChevronRightIcon />}
+                            bg={useColorModeValue('#64b4c4', '#5e55c9')}
+                            alignItems={"middle"}
+                            py={2}
+                            pl={4}
+                            pr={2}
+                            _hover={{ bg: useColorModeValue('#4f8f9c', '#3f3a7a') }}
+                            >
+                                projects
                             </Button>
                         </NextLink>
-                    </Box>
+                        <NextLink href="/posts">
+                            <Button
+                            rightIcon={<ChevronRightIcon />}
+                            bg={useColorModeValue('#64b4c4', '#5e55c9')}
+                            alignItems={"middle"}
+                            py={2}
+                            pl={4}
+                            pr={2}
+                            _hover={{ bg: useColorModeValue('#4f8f9c', '#3f3a7a') }}
+                            >
+                                posts
+                            </Button>
+                        </NextLink>
+                        <NextLink href="/contact">
+                            <Button
+                            rightIcon={<ChevronRightIcon />}
+                            bg={useColorModeValue('#64b4c4', '#5e55c9')}
+                            alignItems={"middle"}
+                            _hover={{ bg: useColorModeValue('#4f8f9c', '#3f3a7a') }}
+                            py={2}
+                            pl={4}
+                            pr={2}
+                            >
+                                contact
+                            </Button>
+                        </NextLink>
+                    </HStack>
                 </Section>
 
                 <Section delay={0.2}>
-                    <Divider my={5} />
-                    <Heading as="h3" variant="section-title" fontSize={26}>
+                    <Divider my={3} />
+                    <Heading as="h3" variant="section-title" fontSize={26} mb={2}>
                         experience
                     </Heading>
                     <NoteSectionYear>
@@ -90,13 +125,13 @@ const Page = () => {
                     </NoteSectionYear>
                     <NoteSectionYear>
                         <NoteSectionYearYR>2020-21</NoteSectionYearYR>
-                        7Factor | Programming Intern ~ Worked with a senior engineer on a covid-19 screening tool built on vue.js. Based in Atlanta, Remote.
+                        7Factor | Programming Intern ~ Worked with a senior engineer on a covid-19 screening tool built on vue.js. Located in Atlanta, Remote.
                     </NoteSectionYear>
                 </Section>
 
                 <Section delay={0.2}>
                     <Divider my={5} />
-                    <Heading as="h3" variant="section-title" fontSize={26}>
+                    <Heading as="h3" variant="section-title" fontSize={26} mb={1}>
                         fun facts
                     </Heading>
                     <Para>
