@@ -18,8 +18,8 @@ export const Title = ({ children }) => (
     </Box>
 )
 
-export const WorkImage = ({ src, alt }) => (
-    <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
+export const WorkImage = ({ src, alt, size }) => (
+    <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} boxSize={size} align={'center'} />
 )
 
 export const Meta = ({ children }) => (

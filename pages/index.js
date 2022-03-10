@@ -7,13 +7,14 @@ import {
     Link,
     useColorModeValue,
     Divider,
-    HStack
+    HStack,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import NextLink from 'next/link'
 import Section from '../components/section'
 import Para from '../components/para'
+import Stats from '../components/stats'
 import { NoteSectionYear , NoteSectionYearYR } from '../components/yearsection'
 
 const Page = () => {
@@ -58,7 +59,7 @@ const Page = () => {
 
                 <Section delay={0.1}>
                     <Heading as="h3" variant="section-title" fontSize={26} mb={1} mt={-1}>
-                        about
+                        [about]
                     </Heading>
                     <Para>
                         Student at the University of Ottawa studying Computer Science, looking for internship or work
@@ -114,10 +115,10 @@ const Page = () => {
                     </HStack>
                 </Section>
 
-                <Section delay={0.2}>
+                <Section delay={0.3}>
                     <Divider my={3} />
                     <Heading as="h3" variant="section-title" fontSize={26} mb={2}>
-                        experience
+                        [experience]
                     </Heading>
                     <NoteSectionYear>
                         <NoteSectionYearYR>2020-25</NoteSectionYearYR>
@@ -129,10 +130,10 @@ const Page = () => {
                     </NoteSectionYear>
                 </Section>
 
-                <Section delay={0.2}>
+                <Section delay={0.3}>
                     <Divider my={5} />
                     <Heading as="h3" variant="section-title" fontSize={26} mb={1}>
-                        fun facts
+                        [fun facts]
                     </Heading>
                     <Para>
                         Some of my other interests include crypto, working out, and gaming. You can find my collection of pixels
@@ -144,6 +145,11 @@ const Page = () => {
                         </a>
                         . My interests within the tech industry include web3.0, graphics, and machine learning.
                     </Para>
+                </Section>
+
+                <Section delay={0.4}>
+                    <Divider mt={2} />
+                    <Stats /> 
                 </Section>
             </Container>
         </Layout>

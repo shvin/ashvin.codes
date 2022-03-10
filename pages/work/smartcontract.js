@@ -1,13 +1,13 @@
-import { Container, Badge, Link, List, ListItem, Divider } from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem, Divider, } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/work'
+import { Title, Meta, WorkImage } from '../../components/work'
 import P from '../../components/para'
 import Layout from '../../components/layouts/article'
 
 const Work = () => {
     return (
         <Layout title="smartcontract">
-            <Container>
+            <Container maxW={"container.xl"}>
                 <Title>
                     ERC721 Research/Optimization <Badge>2022</Badge>
                 </Title>
@@ -37,6 +37,7 @@ const Work = () => {
                     </ListItem>
                 </List>
                 <Divider my={4} />
+                    <WorkImage src="/images/works/smartcontract_1.png" alt="smartcontract" />
                 <P>
                     Another feature included is the ability for owners to mint NFTs using the same contract which is used for giveaways. Potential use case in the future would be creating a fullstack minting application to create and mint a collection. This is still a work in progress!
                 </P>

@@ -71,14 +71,14 @@ const Work = () => {
                 </Section>
             </SimpleGrid>
 
-            <Section delay={0.2}>
+            <Section delay={0.3}>
             <Divider my={10} />
             <Box
-            borderRadius="lg"
-            bg={useColorModeValue('#40b7f7', '#946bfa')}
-            p={3}
-            mb={6}
-            align="center"
+                borderRadius="lg"
+                bg={useColorModeValue('#40b7f7', '#946bfa')}
+                p={3}
+                mb={6}
+                align="center"
             >
                 potential projects
             </Box>
@@ -106,7 +106,7 @@ const Work = () => {
             </Section>
 
             <SimpleGrid columns={[1,1,2]} gap={6}>
-                <Section delay={0.3}>
+                <Section delay={0.4}>
                     <WorkGridItem
                     id="gtsys"
                     title="global transport systems"

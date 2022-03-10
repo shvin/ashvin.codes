@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
     return (
         <Layout title="vinbot">
-            <Container>
+            <Container maxW={"container.xl"}>
                 <Title>
                     vinbot <Badge>2021</Badge>
                 </Title>

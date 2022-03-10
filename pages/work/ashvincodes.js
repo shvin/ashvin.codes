@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
     return (
         <Layout title="portfolio">
-            <Container>
+            <Container maxW={"container.xl"}>
                 <Title>
                     ashvin.codes <Badge>2022</Badge>
                 </Title>

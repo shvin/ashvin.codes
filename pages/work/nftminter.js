@@ -8,7 +8,7 @@ import NextLink from 'next/link'
 const Work = () => {
     return (
         <Layout title="nftminter">
-            <Container>
+            <Container maxW={"container.xl"}>
                 <Title>
                     NFT Minting dAPP <Badge>2022</Badge>
                 </Title>
