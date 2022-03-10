@@ -15,9 +15,9 @@ const Posts = () => {
                     Coding on windows 10 was not very efficient or easy to use and I wanted to be able to play some games once in a while without dual booting. Therefore I installed ubuntu through the Windows Subsystem for Linux allowing all my code and packages to stay on the linux partition windows made.
                 </P>
                 <Divider my={4} />
-                <WorkImage src="/images/posts/thumbwsl.png" alt="thumbwsl" />
+                <WorkImage src="/images/posts/wsl.gif" alt="wsl" />
                 <P>
-                    There is a seamless integration between vscode and the updated win11 terminal, allowing easy file transfer between windows and linux via native file explorer. Since it is the full ubuntu distro, I was able to utilize {''} 
+                    The animation above shows my workspace environment for coding this website alongside WSL and vscode. Some of the extensions on my .zsh include <code>syntax-highlighter</code>, <code>auto-complete</code>, and <code>neofetch</code>. There is a seamless integration between vscode and the updated win11 terminal, allowing easy file transfer between windows and linux via native file explorer. Since it is the full ubuntu distro, I was able to utilize {''} 
                     <a href="https://ohmyz.sh/">
                         <Link>
                             zsh 
