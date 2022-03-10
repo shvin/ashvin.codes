@@ -19,7 +19,7 @@ import { NoteSectionYear , NoteSectionYearYR } from '../components/yearsection'
 const Page = () => {
     return (
         <Layout>
-            <Container>
+            <Container maxW={"container.lg"}>
                 <Box
                 borderRadius="lg"
                 bg={useColorModeValue('#40b7f7', '#946bfa')}
@@ -57,7 +57,7 @@ const Page = () => {
                 </Box>
 
                 <Section delay={0.1}>
-                    <Heading as="h3" variant="section-title" fontSize={26} mb={1}>
+                    <Heading as="h3" variant="section-title" fontSize={26} mb={1} mt={-1}>
                         about
                     </Heading>
                     <Para>
@@ -71,7 +71,7 @@ const Page = () => {
                         </NextLink>
                         ; built with Next.js, Chakra UI, Framer Motion, and Three.js. 
                     </Para>
-                    <HStack my={2} spacing={8} justifyContent={"center"}>
+                    <HStack my={4} spacing={8} justifyContent={"center"}>
                         <NextLink href="/work">
                             <Button
                             rightIcon={<ChevronRightIcon />}

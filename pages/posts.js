@@ -7,9 +7,9 @@ import thumbwsl from '../public/images/posts/thumbwsl.png'
 
 const Posts = () => (
     <Layout title="Posts">
-        <Container>
+        <Container maxW={"full"}>
             <Heading as="h3" fontSize={20} mb={4}>
-                Popular Posts
+                Posts
             </Heading>
             <Section delay={0.1}>
                 <SimpleGrid columns={[1, 2, 2]} gap={6}>

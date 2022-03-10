@@ -49,7 +49,7 @@ import {
                         Fill up the form below to contact
                         </Text>
                         <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                        <VStack pl={0} spacing={3} alignItems="center">
+                        <VStack pl={0} spacing={3} alignItems="flex-start">
                             <Button
                                 size="md"
                                 height="48px"
@@ -89,7 +89,7 @@ import {
                         mt={{ lg: 10, md: 10 }}
                         spacing={5}
                         px={5}
-                        alignItems="center">
+                        alignItems="flex-start">
                         <IconButton
                             aria-label="linkedin"
                             variant="ghost"
@@ -97,6 +97,7 @@ import {
                             isRound={true}
                             _hover={{ bg: useColorModeValue('#4f8f9c', '#3f3a7a') }}
                             icon={<FaLinkedin size="28px" />}
+                            href="https://linkedin.com/in/ashvinr03"
                         />
                         <IconButton
                             aria-label="github"
@@ -105,6 +106,7 @@ import {
                             isRound={true}
                             _hover={{ bg: useColorModeValue('#4f8f9c', '#3f3a7a') }}
                             icon={<BsGithub size="28px" />}
+                            
                         />
                         <IconButton
                             aria-label="discord"
