@@ -1,8 +1,10 @@
-import { Container, Badge, Link, List, ListItem, Divider, } from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem, Divider, Box, SimpleGrid, } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta, WorkImage } from '../../components/post'
 import P from '../../components/para'
 import Layout from '../../components/layouts/article'
+import { CheckIcon } from '@chakra-ui/icons'
+import { Feature } from '../../components/features'
 
 const Posts = () => {
     return (
@@ -42,6 +44,45 @@ const Posts = () => {
                         </Link>
                     </ListItem>
                 </List>
+                <Divider my={4} />
+                <Box
+                as="section"
+                maxW="5xl"
+                mx="auto"
+                py="12"
+                px={{
+                    base: '6',
+                    md: '8',
+                }}
+                >
+                    <SimpleGrid
+                    columns={{
+                        base: 1,
+                        md: 2,
+                    }}
+                    spacingX="14"
+                    spacingY={{
+                        base: '8',
+                        md: '10',
+                    }}
+                    >
+                        <Feature title="Mass Whitelist" icon={<CheckIcon color={"green.500"} boxSize={"80%"} />}>
+                            Usage of Merkle Trees for an efficient Whitelist process utilizing a .json file.
+                        </Feature>
+                        <Feature title="Giveaway Mints" icon={<CheckIcon color={"green.500"} boxSize={"80%"} />}>
+                            Contract owner can mint NFTs and only have to pay gas for a giveaway.
+                        </Feature>
+                        <Feature title="Pre/Public Sales" icon={<CheckIcon color={"green.500"} boxSize={"80%"} />}>
+                            Set custom gas prices and mint prices for presale and public sale in the config files.
+                        </Feature>
+                        <Feature title="NFT Reveal" icon={<CheckIcon color={"green.500"} boxSize={"80%"} />}>
+                            Features a reveal function to reveal the content of the NFTs to the public AFTER the mint.
+                        </Feature>
+                        <Feature title="Gas Optimization" icon={<CheckIcon color={"green.500"} boxSize={"70%"} />}>
+                            Gas Optimization using ERC721A modified smart contracts.
+                        </Feature>
+                    </SimpleGrid>
+                </Box>
             </Container>
         </Layout>
     )

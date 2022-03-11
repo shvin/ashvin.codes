@@ -15,6 +15,11 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
+    "/404": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/404.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,20 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/posts.js"
     ],
-    "/posts/sitev1": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/posts/sitev1.js"
-    ],
     "/posts/smartcontract": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/posts/smartcontract.js"
-    ],
-    "/posts/wsl": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/posts/wsl.js"
     ]
   },
   "ampFirstPages": []
