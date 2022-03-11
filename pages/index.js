@@ -136,7 +136,7 @@ const Page = () => {
                         [fun facts]
                     </Heading>
                     <Para>
-                        Some of my other interests include crypto, working out, and gaming. You can find my collection of pixels
+                        Some of my other interests include crypto, working out, and gaming. You can find my collection of NFTs
                         @ {' '}
                         <a href="https://ashvin.tez.page/">
                             <Link>
