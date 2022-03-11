@@ -14,7 +14,7 @@ export const Feature = (props) => {
         md: 'row',
       }}
     >
-      <Box fontSize="4xl">{icon}</Box>
+      <Box fontSize="6xl">{icon}</Box>
       <Stack spacing="1">
         <Text fontWeight="bold" fontSize="lg">
           {title}

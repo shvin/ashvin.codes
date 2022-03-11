@@ -15,7 +15,6 @@ import thumbvinbot from '../public/images/works/vinbot_thumb.png'
 import thumbwikiscraper from '../public/images/works/wikiscraper_thumb.jpg'
 import thumbgtsys from '../public/images/works/gtsys_thumb.png'
 import thumbnftminter from '../public/images/works/nftminter_thumb.jpg'
-import thumbsmartcontract from '../public/images/works/smartcontract_thumb.png'
 
 const Work = () => {
     return (
@@ -59,14 +58,6 @@ const Work = () => {
                     thumbnail={thumbwikiscraper}
                     >
                         a small web scraper bot that reads and returns item drop percentages from the game terraria. bot scrapes the terraria official wiki for these drop rates found on the item&apos;s page.
-                    </WorkGridItem>
-                </Section>
-                <Section>
-                    <WorkGridItem
-                    id="smartcontract"
-                    title="erc721a optmization"
-                    thumbnail={thumbsmartcontract}>
-                        in-depth research about erc721 smart contracts and use cases in the ethereum blockchain. merkle tree whitelists, presales, gas optimizations, and more.
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>

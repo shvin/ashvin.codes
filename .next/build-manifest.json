@@ -25,15 +25,25 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/work": [
+    "/posts": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/work.js"
+      "static/chunks/pages/posts.js"
     ],
-    "/work/ashvincodes": [
+    "/posts/sitev1": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/work/ashvincodes.js"
+      "static/chunks/pages/posts/sitev1.js"
+    ],
+    "/posts/smartcontract": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/posts/smartcontract.js"
+    ],
+    "/posts/wsl": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/posts/wsl.js"
     ]
   },
   "ampFirstPages": []
