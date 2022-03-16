@@ -6,6 +6,7 @@ import { PostGridItem } from '../components/grid-item'
 import thumbwsl from '../public/images/posts/thumbwsl.png'
 import thumbsitev1 from '../public/images/posts/thumbsitev1.png'
 import thumbsmartcontract from '../public/images/posts/smartcontract_thumb.png'
+import thumbterrawiki from '../public/images/posts/thumbterrawiki.png'
 
 const Posts = () => (
     <Layout title="Posts">
@@ -17,18 +18,23 @@ const Posts = () => (
                 <SimpleGrid columns={[1, 2, 2]} gap={6}>
                     <PostGridItem 
                     id="wsl"
-                    title="My ubuntu WSL workspace"
+                    title="My Ubuntu WSL Workspace"
                     thumbnail={thumbwsl}
                     />
                     <PostGridItem 
                     id="sitev1"
-                    title="static portfolio v1"
+                    title="Static Portfolio [v1]"
                     thumbnail={thumbsitev1}
                     />
                     <PostGridItem
                     id="smartcontract"
-                    title="ERC721 Optimization"
+                    title="ERC721 Smart Contract Optimization"
                     thumbnail={thumbsmartcontract}
+                    />
+                    <PostGridItem
+                    id="terrawiki"
+                    title="AnchorSDK Guide for TerraWiki.org"
+                    thumbnail={thumbterrawiki}
                     />
                 </SimpleGrid>
             </Section>
