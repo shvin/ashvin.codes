@@ -15,20 +15,41 @@ import NextLink from 'next/link'
 import Section from '../components/section'
 import Para from '../components/para'
 import Stats from '../components/stats'
+import Typewriter from 'typewriter-effect';
 import { NoteSectionYear , NoteSectionYearYR } from '../components/yearsection'
+import D3ModelLoader from '../components/3dmodelloader'
+import dynamic from 'next/dynamic'
+
+const D3Model = dynamic(() => import('../components/3dmodel'), {
+    ssr: false,
+    loading: () => <D3ModelLoader />
+})
 
 const Page = () => {
     return (
         <Layout>
             <Container maxW={"container.lg"}>
+                <Section>
+                    <D3Model />
+                </Section>
                 <Box
                 borderRadius="lg"
                 bg={useColorModeValue('#40b7f7', '#946bfa')}
                 p={3}
+                mx={10}
                 mb={6}
                 align="center"
                 >
-                    ~ welcome to ashvin.codes! ~
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter
+                            .typeString('welcome to ashvin.codes!')
+                            .changeDelay(100)
+                            .pauseFor(2500)
+                            .deleteAll()
+                            .start();
+                        }}
+                    />
                 </Box>
 
                 <Box display={{ md: 'flex' }}>

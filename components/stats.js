@@ -39,9 +39,9 @@ const Stats = () => {
                 Skills // Tools
             </chakra.h1>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
-                <StatsCard title={'Langs:'} stat={'JavaScript, Java, Python3, Solidity'} />
+                <StatsCard title={'Langs:'} stat={'JavaScript, Java, Python3, Solidity, HTML5, SCSS'} />
                 <StatsCard title={'Tools:'} stat={'React.js, Hardhat, Vue, Next.js, ChakraUI, Three.js, Discord.py, Ethers.js'} />
-                <StatsCard title={'Skills:'} stat={'Git, Docker, Node, Photoshop, Blender'} />
+                <StatsCard title={'Skills:'} stat={'Git, Docker, Node, Photoshop, Blender, Premiere/AE'} />
             </SimpleGrid>
         </Box>
     );

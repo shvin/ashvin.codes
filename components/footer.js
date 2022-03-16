@@ -31,7 +31,7 @@ export default function Footer() {
                             <Link href={'../posts'}>Posts</Link>
                             <Link href={'../contact'}>Contact</Link>
                         </Stack>
-                        <Text>©2022 ashvin.codes. All rights reserved.</Text>
+                        <Text>©{new Date().getFullYear()} ashvin.codes. All rights reserved.</Text>
                     </Container>
                 </Section>
             </Box>
