@@ -20,7 +20,6 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import {
-    MdPhone,
     MdEmail,
     MdLocationOn,
     MdOutlineEmail,
@@ -50,17 +49,6 @@ import {
                         </Text>
                         <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                         <VStack pl={0} spacing={3} alignItems="flex-start">
-                            <Button
-                                size="md"
-                                height="48px"
-                                width="200px"
-                                variant="ghost"
-                                color={useColorModeValue('black', 'white')}
-                                _hover={{ bg: useColorModeValue('#4f8f9c', '#3f3a7a') }}
-                                leftIcon={<MdPhone color={useColorModeValue('#64b4c4', '#5e55c9')} size="25px" />}
-                            >
-                                +1-470-331-5508
-                            </Button>
                             <Button
                                 size="md"
                                 height="48px"
