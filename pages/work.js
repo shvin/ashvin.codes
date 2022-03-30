@@ -15,6 +15,7 @@ import thumbvinbot from '../public/images/works/vinbot_thumb.png'
 import thumbwikiscraper from '../public/images/works/wikiscraper_thumb.jpg'
 import thumbgtsys from '../public/images/works/gtsys_thumb.png'
 import thumbnftminter from '../public/images/works/nftminter_thumb.jpg'
+import thumbwashproto from '../public/images/works/washproto_thumb.png'
 
 const Work = () => {
     return (
@@ -58,6 +59,15 @@ const Work = () => {
                     thumbnail={thumbwikiscraper}
                     >
                         a small web scraper bot that reads and returns item drop percentages from the game terraria. bot scrapes the terraria official wiki for these drop rates found on the item&apos;s page.
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem
+                    id="washprotocol"
+                    title="wash protocol"
+                    thumbnail={thumbwashproto}
+                    >
+                        a protocol built on the terra ecosystem focusing on user privatization utilizing the $SCRT network. 
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
