@@ -67,7 +67,7 @@ const Work = () => {
                     title="wash protocol"
                     thumbnail={thumbwashproto}
                     >
-                        a protocol built on the terra ecosystem focusing on user privatization utilizing the $SCRT network. 
+                        a protocol built on the terra ecosystem focusing on user privatization. 
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
