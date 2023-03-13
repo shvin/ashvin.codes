@@ -8,6 +8,7 @@
 
 > ashvin's nextjs/chakraUI portfolio
 
+getting replaced by a simple blog site a.shvin.dev [under construction]
 
 ### 🏠 [Homepage](https://ashvin.codes)
 
